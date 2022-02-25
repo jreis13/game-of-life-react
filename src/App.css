@@ -1,38 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 .App {
+  padding: 0 3.5em;
+  font-weight: bold;
+  backdrop-filter: blur(3px);
+  color: white;
+  text-shadow: 1px 1px #0e0e0e;
+}
+
+body {
+  background-image: url(../public/gol-background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+.title {
+  font-family: "Press Start 2P", cursive;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
+  color: #47f6fa;
+  text-shadow: 2px 2px #0e0e0e;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input,
+label,
+select {
+  margin: 5px 5px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  margin: 0 5px 10px 0;
+  border: none;
+  text-decoration: none;
+  display: inline-flex;
+  padding: 8px 16px;
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0.85;
+  font-weight: bold;
+}
+
+button:disabled {
+  cursor: help;
+  opacity: 0.4;
+  pointer-events: all !important;
+}
+
+.create:disabled:hover span {
+  display: none;
+}
+
+.create:disabled:hover:before {
+  content: "Select a board 🚩";
+}
+
+button:hover {
+  opacity: 1;
+  text-shadow: 1px 1px #0e0e0e;
+}
+
+button:disabled:hover {
+  opacity: 0.4;
+  text-shadow: none;
+}
+
+.create {
+  background-color: #1a86db;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.previous {
+  background-color: #f04545;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.next {
+  background-color: #4caf50;
+  color: white;
+}
+
+.run {
+  background-color: #e4a021;
+  color: white;
+}
+
+.controls {
+  padding: 16px 0;
+  display: flex;
 }
