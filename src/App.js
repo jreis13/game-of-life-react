@@ -26,7 +26,11 @@ function App() {
 
   function handleCreate(e) {
     e.preventDefault();
-    console.log(`Clicked ${boardType}`);
+    fetch("http://localhost:3001/board")
+      .then((res) => res.json())
+      .then((result) => {
+        setBoard(result);
+      });
   }
 
   function handleRun(e) {
