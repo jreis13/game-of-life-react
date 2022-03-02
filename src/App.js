@@ -30,6 +30,7 @@ function App() {
       .then((res) => res.json())
       .then((result) => {
         setBoard(result);
+        console.log(result);
       });
   }
 
