@@ -70,22 +70,22 @@ button:disabled:hover {
 
 .create {
   background-color: #1a86db;
-  color: white;
+  color: #fff;
 }
 
 .previous {
   background-color: #f04545;
-  color: white;
+  color: #fff;
 }
 
 .next {
   background-color: #4caf50;
-  color: white;
+  color: #fff;
 }
 
 .run {
   background-color: #e4a021;
-  color: white;
+  color: #fff;
 }
 
 .controls {
