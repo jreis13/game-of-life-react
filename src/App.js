@@ -30,7 +30,7 @@ function App() {
       .then((res) => res.json())
       .then((result) => {
         setBoard(result);
-        console.log(result);
+        console.log(board);
       });
   }
 
@@ -113,6 +113,8 @@ function App() {
             Next Iteration ▶
           </button>
         </div>
+
+        <div className="board">{board}</div>
       </main>
     </div>
   );
