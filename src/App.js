@@ -93,10 +93,10 @@ function App() {
         </form>
 
         <label for="secs">Seconds/Iteration:</label>
-        <input type="text"></input>
+        <input type="text" defaultValue={"0.5"}></input>
 
         <label for="nOfIterations"># of Iterations (0 for infinite):</label>
-        <input type="text"></input>
+        <input type="text" defaultValue={"0"}></input>
 
         <br />
 
