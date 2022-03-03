@@ -114,7 +114,7 @@ function App() {
           </button>
         </div>
 
-        <div className="board">{board}</div>
+        <div className="board">{/* colocar o board aqui, usar .map (?) */}</div>
       </main>
     </div>
   );
