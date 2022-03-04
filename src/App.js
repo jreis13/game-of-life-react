@@ -30,7 +30,6 @@ function App() {
       .then((res) => res.json())
       .then((result) => {
         setBoard(result);
-        console.log(board);
       });
   }
 
@@ -119,7 +118,8 @@ function App() {
         <table className="board">
           {board.map((row) => (
             <tr>
-              <td>test</td>
+              {console.log(row)}
+              <td></td>
             </tr>
           ))}
         </table>
